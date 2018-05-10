@@ -102,5 +102,22 @@ public class linkedList { // class of the file
             current.next = null;
         }
     }
-
-}
+    public void removeAtIndex(int index) { // we remove an element at the specified index. 
+        if (index < 0) { // if the index is negative, then we throw an inbulit exception
+            throw new IndexOutOfBoundsException();
+        } else if (index == 0) {
+            removeFromFront(); // if the index is zero, which means we have to remove the first element. hence we call the previous function
+        } else {
+            Node current = head; // we create a new node for traversal
+            for (int i = 0; i < index - 1; i++) { // we traverse til the respective index. 
+                if (current == null) { // if we do not get the required index then we will throw and exception.
+                    throw new IndexOutOfBoundsException();
+                }
+                current = current.next; // update the node
+            }
+            current.next = current.next.next;// we skip the node we need to remove and direct its previous node to the next node available. 
+            if (current.next == null) { // if the index node itself is the last node, then we simply assign it to the current node. 
+                tail = current;
+            }
+        }
+    }
