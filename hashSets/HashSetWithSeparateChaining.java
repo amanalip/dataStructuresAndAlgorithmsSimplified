@@ -16,7 +16,7 @@ public class HashSetWithSeparateChaining {
     public boolean add(String value) {// in this method we add a value to the hashset.
         if (!contains(value)) { //sets don't allow repetition of values.
             int index = hashCode(value) % buckets.length; // finding the index of the hashcode. 
-            LinkedList < String > bucket = buckets[index]; // we locate the index in the memory
+            LinkedList < String > bucket = buckets[index]; // we locate the index in the memory, we use it to get the appropriate linked list.
             bucket.addFirst(value); // we add the value at the front of that particular linked list
             return true;
         }
