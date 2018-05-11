@@ -1,3 +1,6 @@
+// we use linked list to implement queues. We need to have track of the front/first node and the last/tail node.
+
+
 import java.util.LinkedList; // We implement queues using the linkedlist class implementation
 public class Queue {
     protected LinkedList list = new LinkedList(); // creating a new list. 
