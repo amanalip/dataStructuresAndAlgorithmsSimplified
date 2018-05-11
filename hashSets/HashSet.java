@@ -5,7 +5,7 @@ public class HashSet { // we are creating a classs of hashset.
         return value.length();
     }
     public boolean add(String value) { // this method adds the string into the set
-        int index = hashCode(value); // it first generates its hash code.
+        int index = hashCode(value)%values.length; // it first generates its hash code. we do modulo operation so that the index is always in the limits and we do not have an out of bounds issue.
         if (values[index] == null) { // value will be added only if the index is empty. If there is already a value in the index, the it would return false
             values[index] = value;
             return true;
