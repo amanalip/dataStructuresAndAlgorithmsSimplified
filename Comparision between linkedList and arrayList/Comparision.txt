@@ -1,1 +1,26 @@
+//This file is in a text file format because I will be comparing between two separate classes or data structures.
 
+// This comparision is done to see which data structure is more time saving while getting the index of an element. For the sake of simplicity, error handling is omitted.
+
+------------------------------------------------------------------------
+public class LinkedList { // creation of linked list class
+    protected Node head = null;
+    public int getByIndex(int index) {
+        Node current = head;
+        for (int i = 0; i < index; i++) { // to find the index we need to iterate through a loop in Linked List. Time complexity is n.
+            current = current.next;
+        }
+        return current.value;
+    }
+------------------------------------------------------------------------
+    public class ArrayList {
+        protected int values[];
+        public int getByIndex(int index) { // we can directly access the element through its index. time complexity is 1.
+            return values[index];
+        }
+      }
+      
+------------------------------------------------------------------------
+
+
+Hence, while accessing an element by an index, array lists are faster. 
