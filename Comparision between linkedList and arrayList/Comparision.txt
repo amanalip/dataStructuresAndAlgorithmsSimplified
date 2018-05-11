@@ -1,5 +1,7 @@
 //This file is in a text file format because I will be comparing between two separate classes or data structures.
 
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
 // This comparision is done to see which data structure is more time saving while getting the index of an element. For the sake of simplicity, error handling is omitted.
 
 ------------------------------------------------------------------------
@@ -24,3 +26,35 @@ public class LinkedList { // creation of linked list class
 
 
 Hence, while accessing an element by an index, array lists are faster. 
+
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+// This comparision is done to see which data structure is more time saving while we check if a value is available/present in it. For the sake of simplicity, error handling is omitted.
+
+------------------------------------------------------------------------
+public class LinkedList {
+    protected Node head = null;
+    public boolean contains(int value) {
+        Node current = head;
+        while (current != null) { // here we will need N steps.
+            if (current.value == value) return true;
+            else current = current.next;
+        }
+        return false;
+    }
+
+
+------------------------------------------------------------------------
+
+    public class ArrayList {
+        protected int values[];
+        public boolean contains(int value) {
+            for (int i = 0; i < values.length; i++) {// here we will need N steps.
+                if (values[i] == value) return true;
+            }
+            return false;
+        }
+
+------------------------------------------------------------------------
+
+Hence, here we will have the same time complexity.
