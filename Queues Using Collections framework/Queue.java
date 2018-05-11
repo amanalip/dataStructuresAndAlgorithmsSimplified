@@ -1,12 +1,14 @@
-import java.util.LinkedList; 
+import java.util.LinkedList; // We implement queues using the linkedlist class implementation
 public class Queue {
-    protected LinkedList list = new LinkedList();
-    public void add(Object value) {
+    protected LinkedList list = new LinkedList(); // creating a new list. 
+    public void add(Object value) { // in a queue we need to add a value to the end
         list.add(value); // adds to end
     }
     public Object remove() {
-        if (list.isEmpty())
+        if (list.isEmpty()){ // if the queue is empty then we have to return the null object
+            
             return null;
-        return list.removeFirst(); // removes from front
+        }
+        return list.removeFirst(); // by the defination of queue we will remove the first node
     }
 }
