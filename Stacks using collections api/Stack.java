@@ -1,3 +1,8 @@
+/* Stacks are implemented using linked list. we need only one pointer at the beginning of the list.
+*/
+
+
+
 import java.util.LinkedList; // we import the linked list class
 public class Stack {
     protected LinkedList list = new LinkedList();// we create a linked list object
