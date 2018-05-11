@@ -1,6 +1,7 @@
 /*In the file HashSet.java, we will have a exception/error if another value of the same length/hash value goes to a place where another 
 value exists. To solve this issue we will create an array of linkedList. Also known as Ragged Array(A two dimensional array with variable row lengths).
-*/
+There is one flaw in this program. That is, what if a new element needs to be added and its hashcode is much more than the size of the bucket. The file "HashSetsWithSelfResizing.java"
+ in the same directory will solve this issue.*/
 public class HashSetWithSeparateChaining {
 
     private LinkedList < String > [] buckets; // String Array of linked lists
@@ -13,15 +14,21 @@ public class HashSetWithSeparateChaining {
     private int hashCode(String value) { // this method calculates the hashcode. 
         return value.length();
     }
-    public boolean add(String value) {// in this method we add a value to the hashset.
+    public boolean add(String value) { // in this method we add a value to the hashset.
         if (!contains(value)) { //sets don't allow repetition of values.
             int index = hashCode(value) % buckets.length; // finding the index of the hashcode. 
-            LinkedList < String > bucket = buckets[index]; // we locate the index in the memory, we use it to get the appropriate linked list.
+            LinkedList < String > bucket = buckets[index]; // we locate the index in the memory, we use it to get the appropriate linked list. Now we assign this linked list's memory location to a dummy variable bucket.
             bucket.addFirst(value); // we add the value at the front of that particular linked list
             return true;
         }
         return false; // if the value already exists then we return false indicating that the value was already there in the set.
     }
     
+    public boolean contains(String value) { // this methods checks if the set already contains a value or not.
+        int index = hashCode(value) % buckets.length; // getting the index
+        LinkedList < String > bucket = buckets[index]; // reaching out to the particular linked list and then assigning that value to a dummy variable bucket.  
+        return bucket.contains(value);// if this dummy variable contains the value, we will return true. otherwise false. 
+    }
+
 
 }
