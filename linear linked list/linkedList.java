@@ -44,7 +44,7 @@ public class linkedList { // class of the file
                 current = current.next; // updating the value of the current node
             }
             if (current.next == null) { // adding to tail
-                //  tail.next=newNode/* check this */
+                tail.next = newNode
                 tail = newNode;
             } else {
                 newNode.next = current.next; // this current node now points at the next node. but now the added value should point at the next node. hence, newNode.next is now equal to the current.next.
