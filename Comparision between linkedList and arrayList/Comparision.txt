@@ -2,14 +2,16 @@
 
 |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
-// This comparision is done to see which data structure is more time saving while getting the index of an element. For the sake of simplicity, error handling is omitted.
+// This comparision is done to see which data structure is more time saving while getting the index of an element. 
+//For the sake of simplicity, error handling is omitted.
 
 ------------------------------------------------------------------------
 public class LinkedList { // creation of linked list class
     protected Node head = null;
     public int getByIndex(int index) {
         Node current = head;
-        for (int i = 0; i < index; i++) { // to find the index we need to iterate through a loop in Linked List. Time complexity is n.
+        for (int i = 0; i < index; i++) { /* to find the index we need to iterate through a loop in Linked List. 
+        Time complexity is n.*/
             current = current.next;
         }
         return current.value;
@@ -29,7 +31,8 @@ Hence, while accessing an element by an index, array lists are faster.
 
 |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
-// This comparision is done to see which data structure is more time saving while we check if a value is available/present in it. For the sake of simplicity, error handling is omitted.
+/* This comparision is done to see which data structure is more time saving while we check if a value is available/present in it.
+For the sake of simplicity, error handling is omitted.*/
 
 ------------------------------------------------------------------------
 public class LinkedList {
