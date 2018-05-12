@@ -90,7 +90,7 @@ public class linkedList { // class of the file
     public void removeFromBack() { // we have to remove a node from the rear end of this linked list.
         if (head == null) { // empty list
             return;
-        } else if (head.equals(tail)) { // single element list, update the tail and head to null
+        } else if (head == tail) { // single element list, update the tail and head to null
             head = null;
             tail = null;
         } else {
@@ -110,12 +110,15 @@ public class linkedList { // class of the file
         } else {
             Node current = head; // we create a new node for traversal
             for (int i = 0; i < index - 1; i++) { // we traverse til the respective index. 
-                if (current == null) { // if we do not get the required index then we will throw and exception.
+                if (current == null || current.next == null) { // if we do not get the required index then we will throw and exception.
                     throw new IndexOutOfBoundsException();
                 }
                 current = current.next; // update the node
             }
-            current.next = current.next.next;// we skip the node we need to remove and direct its previous node to the next node available. 
+            if (current.next == null) {
+                throw new IndexOutOfBoundsException();
+            }
+            current.next = current.next.next; // we skip the node we need to remove and direct its previous node to the next node available. 
             if (current.next == null) { // if the index node itself is the last node, then we simply assign it to the current node. 
                 tail = current;
             }
