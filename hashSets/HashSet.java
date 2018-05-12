@@ -1,3 +1,4 @@
+//Hashsets combines the extensible nature of linkedlist and the searching power of an array.
 // we will implement hashsets in this file
 // this is a very naive implementaion. please find another file (HashSetWithSeparateChaining.java) in the same directory for a more sophisticated implementaions.
 public class HashSet { // we are creating a classs of hashset.
