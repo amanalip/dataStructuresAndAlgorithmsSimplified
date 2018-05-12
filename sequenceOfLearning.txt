@@ -1,6 +1,10 @@
-------------------------------------------------------------------
-Data Structure
+-------------------------------------------
+Data Structures
 
-linkedlist-->Queues-->Stacks-->hashset-->map-->
+linkedlist-->Queues-->Stacks-->hashset-->map
 
-------------------------------------------------------------------
+Note: After Map we have to start learning the advanced data strutures. (Files are in the folder "Advanced Data Structures")
+                                                 
+-------------------------------------------
+Advanced Data Structures
+
