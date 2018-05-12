@@ -2,7 +2,8 @@
 value exists. To solve this issue we will create an array of linkedList. Also known as Ragged Array(A two dimensional array with variable row lengths).
 There is one flaw in this program. That is, what if a particular index has more and more values coming. Then that particular index will grow beyond measure. If an index grows
 beyond measure, then searching a value in that increases in its time complexity and we will lose the initial benefits we had of creating a hash set.
-The solution to this problem is to resize the length of the hashset automatically to make the whole hashset. Now we can reduce the length of each index in the hashset */
+The solution to this problem is to resize the length of the hashset automatically to make the whole hashset. Now we can reduce the length of each index in the hashset.
+Please find the file "HashSetsWithSelfResizing.java" in the current directory. */
 public class HashSetWithSeparateChaining {
 
     private LinkedList < String > [] buckets; // String Array of linked lists
