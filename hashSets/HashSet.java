@@ -1,5 +1,5 @@
 // we will implement hashsets in this file
-// this is a very naive implementaions. please find another file (HashSetWithSeparateChaining.java) in the same directory for a more sophisticated implementaions.
+// this is a very naive implementaion. please find another file (HashSetWithSeparateChaining.java) in the same directory for a more sophisticated implementaions.
 public class HashSet { // we are creating a classs of hashset.
 
     private String[] values; // here we are declaring a array of strings.
