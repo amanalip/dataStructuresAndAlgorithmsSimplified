@@ -1,9 +1,14 @@
 /*
+Note:The following program assumes that the tree already has the values and we are just retrieving the data from the tree.
+     Program files for all the binary search tree operations will be uploaded soon. I guess within a day starting from the time
+     of writing this sentence, Or (lets say)you reading this statement. (See, I just stole some time. Haha!!). On real note,
+     I haven't learnt them yet. Initially we will focus on the advantages of Binary search tree. 
+Theory:
 1) Binary search tree is an extension of binary tree data structure.
 2) In a Binary search tree, elements are added in a sorted order. Binary tree intends solve the "preserving the order of data entry"
 problem.
 3) The value of the left child  is always smaller than the parent. The value of the right child is always greater than the parent node.
-4) Left subtree is always smaller than the right subtree.
+4) Left subtree is always smaller than the right subtree with respect to a node.
 
 Note: This file has to updated with preorder and post order traversals.
 */
