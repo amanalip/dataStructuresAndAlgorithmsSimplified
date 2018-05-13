@@ -1,7 +1,7 @@
 /*
 Note:The following program assumes that the tree already has the values and we are just retrieving the data from the tree.
      Program files for all the binary search tree operations will be uploaded soon. I guess within a day starting from the time
-     of writing this sentence, Or (lets say)you reading this statement. (See, I just stole some time. Haha!!). On real note,
+     of writing this sentence, Or (lets say)you reading this statement. (See, I just stole some extra time. Haha!!). On real note,
      I haven't learnt them yet. Initially we will focus on the advantages of Binary search tree. 
 Theory:
 1) Binary search tree is an extension of binary tree data structure.
