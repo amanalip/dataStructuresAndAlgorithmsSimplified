@@ -1,0 +1,24 @@
+Author : Aman Ali
+Date : 5/12/2018
+
+The purpose of this document is to understand as to what is the reason behind having advanced data structures 
+like trees, graphs and heaps. But before going to that. Let us first evaluate the simple data structures and its progression. 
+
+1) Arrays: Its simple to implement. But is not resizable. that effects the efficiency. And many operations are O(n).
+
+2) Linked List : Resizable, simple to implement. But search operations are not time efficient. 
+
+3) Hash Sets : Hashsts are simple, and even the information retrival is faster. But we will not have the track of the order
+in which the data is fed into the data structure. 
+
+Motivation for Advanced Data Structures:
+
+1) A solution for having a simple data entry solution.
+
+2) A solution for preserving the order of data entry. 
+
+3) A solution for having the relationships between the data that are already existing in the data structure. 
+
+Please find the advanced data structures in the folder "Advanced Data Structures", in the current directory.
+
+
