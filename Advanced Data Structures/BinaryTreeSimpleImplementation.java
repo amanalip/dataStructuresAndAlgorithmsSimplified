@@ -4,7 +4,7 @@ right child is always greater than the parent node. This file just has the simpl
 solve the "preserving the order of data entry" problem.*/
 
 
-public class BinaryTree {
+public class BinaryTreeSimpleImplementation {
     class Node {
         int value; //the data that needs to be given.
         Node leftChild = null;// initialising the values of left and right child to null.
