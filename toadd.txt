@@ -1,1 +1,3 @@
 maps
+advanced type of trees like red-black, tries etc. 
+try to add applications of each data structure.
