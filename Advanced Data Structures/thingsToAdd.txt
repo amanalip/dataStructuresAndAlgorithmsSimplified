@@ -8,5 +8,5 @@
 
 --comparision between tree maps and hash maps
 
--- heaps-types of heaps || priority queues(min heaps)
+-- heaps-types of heaps || priority queues(min heaps) && how to modify min heap to a max heap
     
