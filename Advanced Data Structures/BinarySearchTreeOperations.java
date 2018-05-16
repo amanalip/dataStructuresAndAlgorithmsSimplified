@@ -49,4 +49,29 @@ updated here.*/
             }
         }
     }
+    
+    public boolean remove(Node n, Node parent, int val) { /*This method removes a value(val). n stands for the node we are 
+    looking at. parent stands for the current subtree's parent node*/
+    if (n == null) return false; // if the node doesn't exist. return false
+    if (val < n.value) { //if the current node value is greater than the value to be removed, recursively look into left subtree.
+        return remove(n.leftChild, n, val);
+    } else if (val > n.value) {
+        return remove(n.rightChild, n, val);/*if the current node value is greater than the value to be 
+        removed, recursively look into left subtree.*/
+    } else { // we enter this segment if we have found the value
+        if (n.leftChild != null && n.rightChild != null) { // if the node to be removed has non-null left child and right child
+            n.value = maxValue(n.leftChild); /*take the maximum value of the left subtree and replace it to the place where
+            the previous node is removed*/
+            remove(n.leftChild, n, n.value); /*after replacing, remove the replacement's previous location*/
+        } else if (parent.leftChild == n) { // this is case in which either of the child is null
+            parent.leftChild = (n.leftChild != null) ? n.leftChild : n.rightChild; /* if the left child is not null, then we will have
+           then we will make it to the parent's left child. if it is null then we will make the right child to the parent's left child */
+        } else {
+            parent.rightChild = (n.leftChild != null) ? n.leftChild : n.rightChild; /*if we are looking in the right subtree, then if 
+            the left child is not null, then we will have then we will make it to the parent's right child. 
+            if it is null then we will make the right child to the parent's right child*/
+        }
+        return true; /*termination of program*/
+    }
+}
 }
