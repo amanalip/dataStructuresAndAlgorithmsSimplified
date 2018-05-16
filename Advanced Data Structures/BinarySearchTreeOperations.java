@@ -29,7 +29,9 @@ public class BinarySearchTreeOperations {
         }
     }
 /* Note: Again the following method has recursion in it. I will explain recursion in detail in another file, and its path would be 
-updated here.*/
+updated here.
+
+When a node is removed from a Binary Search Tree, it must be  replaced with the largest value in its left subtree*/
     public boolean add(Node n, int val) { // this method adds the value. 
         if (n.value == val) { // if value already exists then no duplication allowed.
             return false;
