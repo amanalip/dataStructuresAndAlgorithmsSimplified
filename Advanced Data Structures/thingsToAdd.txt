@@ -3,3 +3,5 @@
 -- red black tree coloring, self balancing of trees. other balancing trees to be added too!!
 
 -- tree sets in java api
+
+--tree maps
