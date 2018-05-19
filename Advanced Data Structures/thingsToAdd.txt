@@ -10,5 +10,5 @@
 --------------------------------------------------------------------------------------------------
 -- heaps-types of heaps || priority queues(min heaps) && how to modify min heap to a max heap
 
--- graphs : types of representation
+-- graphs : types of representation, BFS DFS. When to use what
     
